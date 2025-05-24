@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = "django-insecure-y0&t+m^$bs^!l3_w!311-b-ayfgvv#0#_k-ya&pw(h@_1fqs77"
-os.environ.get('DJANGO_SECRET_KEY', 'your-default-fallback-key')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'your-default-fallback-key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
